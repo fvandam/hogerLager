@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoger Lager met henk</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <script src="js/main.js"></script>
+    <div id="rules"><p>spelregels!</p> <br>
+        <ul>
+            <li>henk denkt aan een nummer tussen de 1 en 10</li>
+            <li>het is een nummer wat hoger of lager is dan 5</li>
+            <li>jij kiest dan of het hoger of lager is dan 5</li>
+            <li>en dan laat henk zien aan welk nummer hij denkt</li>
+            <li>en krijg je te zien of je het goed had of niet</li>
+        </ul>
+    </div>
+    <div id="wrapper">
+    <div class="text">
+        <h1>bienvenue à hoger lager avec henk! <br> of ook wel Welkom bij hoger lager met henk!</h1>
+        <h2>!lees eerst spelregels link bovenin!</h2>
+        <h3 id="textField"></h3>
+
+        <input type="button" class="btn btn-info" value="Hoger" onclick="hoger()">
+
+        <input type="button" class="btn btn-info" value="Lager" onclick="lager()">
+    </div>
+
+    <div class="text">
+        <input type="button" class="btn btn-info" value="Reset" onclick="reset()">
+    </div>
+
+    <article>
+        <p>henk dacht aan het nummer <a id="cijfer"></a></p>
+    </article>
+    </div>
+</body>
+
+</html>
